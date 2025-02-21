@@ -28,3 +28,7 @@ yearlyRent=rentAmmount*12
 yearlyElectricity=electricityAmmount*12
 print("The estimated yearly rent is: "+str(yearlyRent))
 print("The estimated yearly electricity is: "+str(yearlyElectricity))
+
+# Squarring the salary
+sqrSalary=salary**2
+print("The salary squared is: "+str(sqrSalary))
