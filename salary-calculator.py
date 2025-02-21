@@ -18,3 +18,8 @@ print("The ammount allocated to electricity is: "+str(electricityAmmount)+"!")
 totalExpenses=savingAmmount+rentAmmount+electricityAmmount
 print("The total expenses is: " +str(totalExpenses))
 
+# Calculating the remainder
+
+remainder=salary-totalExpenses
+print("The remainder of salary is: "+str(remainder))
+
