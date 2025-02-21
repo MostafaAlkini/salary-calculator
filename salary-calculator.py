@@ -23,3 +23,8 @@ print("The total expenses is: " +str(totalExpenses))
 remainder=salary-totalExpenses
 print("The remainder of salary is: "+str(remainder))
 
+# Yearly estimated for rent and electricity
+yearlyRent=rentAmmount*12
+yearlyElectricity=electricityAmmount*12
+print("The estimated yearly rent is: "+str(yearlyRent))
+print("The estimated yearly electricity is: "+str(yearlyElectricity))
