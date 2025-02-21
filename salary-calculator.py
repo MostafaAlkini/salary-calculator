@@ -9,7 +9,12 @@ savingAmmount=(salary*saving)/100
 rentAmmount=(salary*rent)/100
 electricityAmmount=(salary*electricity)/100
 
+# Ammount Calculating
 print("The ammount allocated to saving is: "+str(savingAmmount)+"!")
 print("The ammount allocated to rent is: "+str(rentAmmount)+"!")
 print("The ammount allocated to electricity is: "+str(electricityAmmount)+"!")
+
+# Total expenses
+totalExpenses=savingAmmount+rentAmmount+electricityAmmount
+print("The total expenses is: " +str(totalExpenses))
 
