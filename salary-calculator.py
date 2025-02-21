@@ -5,17 +5,17 @@ saving=int(input("Enter the percentage of saving: "))
 rent=int(input("Enter the percentage of rent: "))
 electricity=int(input("Enter the percentage of electricity: "))
 
-savingAmmount=(salary*saving)/100
-rentAmmount=(salary*rent)/100
-electricityAmmount=(salary*electricity)/100
+savingAmount=(salary*saving)/100
+rentAmount=(salary*rent)/100
+electricityAmount=(salary*electricity)/100
 
-# Ammount Calculating
-print("The ammount allocated to saving is: "+str(savingAmmount)+"!")
-print("The ammount allocated to rent is: "+str(rentAmmount)+"!")
-print("The ammount allocated to electricity is: "+str(electricityAmmount)+"!")
+# Amount Calculating
+print("The amount allocated to saving for "+month+" is: "+str(savingAmount)+"!")
+print("The amount allocated to rent for "+month+" is: "+str(rentAmount)+"!")
+print("The amount allocated to electricity for "+month+" is: "+str(electricityAmount)+"!")
 
 # Total expenses
-totalExpenses=savingAmmount+rentAmmount+electricityAmmount
+totalExpenses=savingAmount+rentAmount+electricityAmount
 print("The total expenses is: " +str(totalExpenses))
 
 # Calculating the remainder
@@ -24,11 +24,21 @@ remainder=salary-totalExpenses
 print("The remainder of salary is: "+str(remainder))
 
 # Yearly estimated for rent and electricity
-yearlyRent=rentAmmount*12
-yearlyElectricity=electricityAmmount*12
+yearlyRent=rentAmount*12
+yearlyElectricity=electricityAmount*12
 print("The estimated yearly rent is: "+str(yearlyRent))
 print("The estimated yearly electricity is: "+str(yearlyElectricity))
 
 # Squarring the salary
 sqrSalary=salary**2
 print("The salary squared is: "+str(sqrSalary))
+
+
+# Additional Amount
+isAdditional=input("Is there an additional amount (yes/no)?  ")
+if isAdditional=="yes":
+    additonalAmount=int(input("Enter the additional amount: "))
+    savingRemainder = additonalAmount/savingAmount
+    print("The remainder is: "+str(savingRemainder))
+
+
